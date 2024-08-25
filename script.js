@@ -28,7 +28,7 @@ function encriptar(stringEncriptado) {
      return stringEncriptado;
 }
 
-function btndesencriptar() {
+function btnDesencriptar() {
     const textoEncriptado = desencriptar(textArea.value);
     mensaje.value = textoEncriptado;
     textArea.value = "";
@@ -47,7 +47,7 @@ function desencriptar(stringDesencriptado) {
     return stringDesencriptado;
 }
 
-function btncopiar() {
+function btnCopiar() {
     mensaje.select();
     mensaje.setSelectionRange(0, 99999); 
     navigator.clipboard.writeText(mensaje.value)
